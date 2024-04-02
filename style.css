@@ -1,0 +1,399 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+    }
+}
+body{
+    background-color: black;
+}
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(184, 174, 182);
+    border-radius: 50%;
+    z-index: 999;
+    position: absolute;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(165, 165, 159);
+    position: relative;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s;
+    transition-duration: 1s;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 1s;
+}
+.header .logo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 7%;
+    overflow: hidden;
+    p{
+        animation: hide3 1s ease 0.2s;
+    }
+}
+@keyframes hide3{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.header .menu{
+    text-decoration: none;
+    margin-right: 5rem;
+    overflow: hidden;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 3vw;
+    align-items: center;
+    p{
+        animation: hide3 1s ease 0.2s;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    button{
+        padding: 0.5rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-radius: 1rem;
+        background-color: bisque;
+    }
+}
+@media (max-width: 450px) {
+    .header .logo{
+        margin: 0px;
+    }
+    .header .menu {
+        margin-right: 1px;
+        width: min-content;
+        #menu{
+            display: none;
+        }
+    }
+    #hero{
+        height: max-content;
+    }
+    #projects h2{
+        margin-top: 2rem;
+        font-size: 2.3rem;
+    }
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+@keyframes hide{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.bounding .p1{
+    animation: hide 1s ease-in-out 0.4s 1;
+}
+.block-content .p5{
+    animation: hide 1s ease-in-out 0.4s 1;
+}
+.name{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+.name .p1{
+    /* color: rgb(145, 145, 134); */
+    font-size: 10vw;  
+}
+.name .block-content{
+    width: min-content;
+    margin-left: 13%;
+    gap: 2vw;
+}
+.block-content .p2{
+    /* color: rgb(145, 145, 134); */
+    font-size: 9vw;
+}
+.block-content .p3{
+    /* color: rgb(145, 145, 134); */
+    font-size: 2vw;
+    text-align: right;
+}
+#hero .intro{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 7vw;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+#hero .intro span{
+    animation: hide2 1s ease-in-out 0.2s;
+}
+@keyframes hide2{
+    from{
+        transform: translateY(200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+#hero-footer{
+    width: 100%;
+    margin-top: 4vw;
+    padding:1vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    a{
+        text-decoration: none;
+        /* color: rgb(240, 234, 234); */
+    }
+    .circles{
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: rgb(197, 187, 187);
+            border-radius: 10%;
+            width: 2rem;
+        }
+    }
+}
+
+#second{
+    padding-top: 50px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all;
+    transition-duration: 1s;
+}
+.element{
+    border-top: 3px solid rgb(124, 117, 117);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    position: relative;
+    .content{
+        font-size: 4.5vw;
+    }
+    .date{
+        font-size:2.6vw;
+    }
+    img{
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        z-index: -1;
+        border-radius: 2rem;
+        transition: all 0.3s ease-out;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+#last-element{
+    border-bottom: 3px solid rgb(124, 117, 117);
+    margin-bottom: 5vw;
+}
+#third{
+    margin-top: 5rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    float: right;
+    padding-left: 20vw;
+    gap: 7%;
+    align-items: center;
+    h3{
+        text-decoration: underline;
+    }
+}
+#third img{
+    width: 15vw;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+#third #aboutme{
+    border-radius: 1.3rem;
+    font-size: 1.4rem;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 0px 210px 30px rgba(62, 33, 207, 0.331);
+    button{
+        margin: 10px 0px;
+        font-weight: 700;
+        font-size: 1.4rem;
+        border-radius: 7px;
+        background-color: rgb(190, 190, 204);
+        cursor: pointer;
+        padding: 4px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+#skills-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+#skills-logo .images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-evenly;
+}
+#skills-logo img{
+    width: 60px;
+    opacity: 0.6;
+    box-shadow: 0px 0px 210px 20px rgba(152, 49, 137, 0.619);
+}
+#fourth{
+    margin: 3rem;
+    padding-bottom: 3vw;
+    a{
+        text-decoration: none;
+    }  
+}
+#projects h2{
+    margin-top: 6rem;
+    font-size: 4rem;
+}
+.card-container{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 10px 90px rgba(255, 0, 0, 0.029);
+}
+.card{
+    width: 450px;
+    min-width: 225px;
+    height: max-content;
+    box-shadow: 0px 0px 210px 20px rgba(40, 40, 189, 0.374);
+    overflow: hidden;
+    border-radius: 1.6rem;
+    a{
+        font-size: 2rem;
+    }
+}
+.image-cont{
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    a{
+        font-size: 2rem;
+        color: azure;
+    }
+}
+.image-cont:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-image{
+        opacity: 0.5;
+    }
+    .hover-text{
+        display: block;
+    }
+}
+.hover-text{
+    display: none;
+    position: absolute;
+    display: flex;
+    align-self: center;
+}
+.card .main-image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.card .main-image:hover{
+    transform: scale(1.2);
+}
+h3{
+    margin: 1rem;
+}
+p{
+    margin: 0px 1rem;
+}
+.card .card-foot{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+.card .logo{
+    width: 1.6rem;
+}
+#footer{
+    margin: 0rem 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem;
+}
+#footer #first-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+#footer #second-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    a{
+        text-decoration: none;
+    }
+}
