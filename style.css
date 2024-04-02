@@ -245,6 +245,7 @@ main{
 }
 #third img{
     width: 15vw;
+    min-width: 5rem;
     border-radius: 50%;
     opacity: 0.5;
 }
@@ -252,6 +253,7 @@ main{
     border-radius: 1.3rem;
     font-size: 1.4rem;
     gap: 2rem;
+    width: 70%;
     padding: 1rem;
     margin-bottom: 4rem;
     box-shadow: 0px 0px 210px 30px rgba(62, 33, 207, 0.331);
