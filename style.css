@@ -84,6 +84,7 @@ main{
         margin: 0px;
     }
     .header .menu {
+        margin-top: 9px;
         margin-right: 1px;
         width: min-content;
         #menu{
@@ -137,7 +138,7 @@ main{
 }
 .block-content .p3{
     /* color: rgb(145, 145, 134); */
-    font-size: 2vw;
+    font-size: 1rem;
     text-align: right;
 }
 #hero .intro{
@@ -245,7 +246,7 @@ main{
 }
 #third img{
     width: 15vw;
-    min-width: 5rem;
+    min-width: 7rem;
     border-radius: 50%;
     opacity: 0.5;
 }
@@ -254,6 +255,7 @@ main{
     font-size: 1.4rem;
     gap: 2rem;
     width: 70%;
+    min-width: 280px;
     padding: 1rem;
     margin-bottom: 4rem;
     box-shadow: 0px 0px 210px 30px rgba(62, 33, 207, 0.331);
