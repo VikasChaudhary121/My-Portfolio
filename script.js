@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('main'),
+//     smooth: true
+// });
 
 let current_mode = "dark";
 let mode_button = document.querySelector("#mode");
