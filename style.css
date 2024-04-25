@@ -406,3 +406,83 @@ p{
         text-decoration: none;
     }
 }
+
+#contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-items{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+.email-name{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.input-box{
+    height: 2rem;
+    width: max-content;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(234, 236, 236);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-left: 0.6rem;
+    font-style: italic;
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.allInputBox{
+    display: flex;
+    gap: 2rem;
+}
+#textArea{
+    background-color: rgb(234, 236, 236);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 10px;
+}
+.input-box-com:hover{
+    background-color: rgb(168, 192, 192);
+    box-shadow: 0px 0px 10px 0px rgb(68, 112, 123);
+}
+.submitBtn{
+    width: 40%;
+    height: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(89, 119, 119);
+    box-shadow: -1px 2px 10px 2px azure;
+}
+.submitBtn:hover{
+    background-color: azure;
+    box-shadow: -1px 2px 10px 2px darkcyan;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.4s;
+}
